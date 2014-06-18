@@ -1,15 +1,4 @@
-level-dynamodb
-==============
-
-A convenience package bundling **[LevelUP](https://github.com/rvagg/node-levelup)** and **[DyamoDOWN](https://github.com/davidguttman/dynamodown)**
-
-This is a convenience package that bundles the current release of LevelUP and DynamoDOWN and exposes LevelUP on its export.
-
-Use this package to avoid having to explicitly install DynamoDOWN when you want to use DynamoDOWN with LevelUP.
-
-```js
-
-var level = require('level-dynamodb')
+var level = require('../')
 
 // 1) Create our database, supply location and options.
 //    This will create or open the underlying LevelDB store.
@@ -25,6 +14,9 @@ var db = level('some-table-name', {
     ProvisionedThroughput: {
       ReadCapacityUnits: 1,
       WriteCapacityUnits: 1
+    },
+    httpOptions: {
+      proxy: 'http://localhost:8000'
     }
   }
 })
@@ -41,11 +33,3 @@ db.put('name', 'Level', function (err) {
     console.log('name=' + value)
   })
 })
-
-```
-
-See **[LevelUP](https://github.com/rvagg/node-levelup)** and **[DyamoDOWN](https://github.com/davidguttman/dynamodown)** for more details.
-
-## License
-
-MIT

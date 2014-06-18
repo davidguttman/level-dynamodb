@@ -1,0 +1,23 @@
+{
+  "name": "level-dynamodb",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidguttman/level-dynamodb.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidguttman/level-dynamodb/issues"
+  },
+  "homepage": "https://github.com/davidguttman/level-dynamodb",
+  "dependencies": {
+    "level-packager": "^0.18.0",
+    "dynamodown": "0.0.1"
+  }
+}
