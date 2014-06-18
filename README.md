@@ -1,7 +1,7 @@
 level-dynamodb
 ==============
 
-A convenience package bundling **[LevelUP](https://github.com/rvagg/node-levelup)** and **[DyamoDOWN](https://github.com/davidguttman/dynamodown)**
+A convenience package bundling **[LevelUP](https://github.com/rvagg/node-levelup)** and **[DynamoDOWN](https://github.com/davidguttman/dynamodown)**
 
 This is a convenience package that bundles the current release of LevelUP and DynamoDOWN and exposes LevelUP on its export.
 
@@ -44,7 +44,7 @@ db.put('name', 'Level', function (err) {
 
 ```
 
-See **[LevelUP](https://github.com/rvagg/node-levelup)** and **[DyamoDOWN](https://github.com/davidguttman/dynamodown)** for more details.
+See **[LevelUP](https://github.com/rvagg/node-levelup)** and **[DynamoDOWN](https://github.com/davidguttman/dynamodown)** for more details.
 
 ## License
 
